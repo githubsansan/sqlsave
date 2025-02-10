@@ -18,7 +18,6 @@ select
   event_tag, 
   --get_object_json(event_tag,'$.content') as content,
   --get_object_json(event_tag,'$.button_content') as button_content,
-  
   json_extract(event_tag,'$.content') as content,
   json_extract(event_tag,'$.button_content') as button_content,
   interval_time, 
