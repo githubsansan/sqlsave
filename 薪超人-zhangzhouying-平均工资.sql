@@ -1,5 +1,5 @@
 --head:"index_name	collect_dt	index_value"
---截至2024-09-30平均工资
+--截至2024-09-30平均工资，单位为日，需要除以平均工时
 select
     '薪资' as index_name
   , '2024-09-30' as collect_dt
