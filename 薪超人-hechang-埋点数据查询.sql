@@ -1,4 +1,15 @@
 --埋点数据统计
+/*
+测试环境 QA
+查询条件，手机测试，环境测试
+实时和静态的两种方式查看埋点类型，进一步对应埋点方案看每一项的参数是否有数据  
+grep联查“与”和“或”
+当前问题，userid  uuid  cid  ctype 为空为0的问题
+需要的字段或者不需要的字段隐藏
+24117RK2CC|76705533|xunhou_app_b_superpays_job_edit_page
+iOS|2025-02-26
+ANDROID|2025-02-26|C002026865
+*/
 select spm_page, count(1) 
 from app_tlog_xunhou_v3
 where p_date = 20250225 and spm_page in 
