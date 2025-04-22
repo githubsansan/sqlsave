@@ -3,10 +3,11 @@ select
     id as store_id
   , store_name
   , contact_person_name
+  , contact_person_mobile
   , address
 from tenant_super_stores
 where deleted_flag = 0 
-and id in (    
+and store_name in (    
   17819
 , 19055
 , 20355
